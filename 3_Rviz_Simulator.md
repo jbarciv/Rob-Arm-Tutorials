@@ -1,4 +1,4 @@
-## Rviz Simulator
+## #3 Rviz Simulator
 
 Working with Rviz to control a simulation of a dynamism-based robot as opposed to a physical robot.
 
