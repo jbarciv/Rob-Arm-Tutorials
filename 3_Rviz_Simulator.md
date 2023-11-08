@@ -4,7 +4,7 @@ Working with Rviz to control a simulation of a dynamism-based robot as opposed t
 
 Reasons?
 1) As a try before you buy, just to see how the robots will work in a virtual environment
-2) You can test out your code on a simulated robot loading ut up onto a physical robot just to make sure that nothing strange is going to happen.
+2) You can test out your code on a simulated robot before loading it up onto a physical robot just to make sure that nothing strange is going to happen.
 
 Terminal commands:
 ``` 
