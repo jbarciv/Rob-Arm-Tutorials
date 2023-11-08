@@ -1,0 +1,14 @@
+Configurar el Archivo .launch
+
+*** /home/christyan/catkin_sureveg/src/interbotix_ros_manipulators/interbotix_ros_xsarms/interbotix_xsarm_moveit/launch/xsarm_moveit.launch
+
+Real >> Deshabilitar el comentario
+
+************** TERMINAL SSH
+ssh unitree@192.168.123.12
+export DISPLAY=:0
+roslaunch interbotix_xsarm_moveit_interface xsarm_moveit_interface.launch robot_model:=wx250s use_cpp_interface:=true use_actual:=true dof:=6
+
+************** TERMINAL MSI
+roslaunch interbotix_xsarm_moveit xsarm_moveit.launch robot_model:=wx250s 
+
