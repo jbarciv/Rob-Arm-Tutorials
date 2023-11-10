@@ -21,7 +21,7 @@ To visualize the robot and move it **just in Rviz**:
 roslaunch interbotix_xsarm_descriptions xsarm_description.launch robot_model:=wx250s use_joint_pub_gui:=true
 ```
 
-To move the robot arm manually, launch this in one terminal: 
+To **move the robot arm manually**, launch this in one terminal: 
 ```
 roslaunch interbotix_xsarm_control xsarm_control.launch robot_model:=wx250s
 ```
