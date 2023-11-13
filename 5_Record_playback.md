@@ -2,6 +2,9 @@
 
 There is documentation about moving two or more robots at the same time. But here we are going to focus in the process of recording the movements of a robot and then doing the same robot to reproduce the recorded motion. This would be good for manually moving the arm to desired position and then playing it back as many times as necessary. We are going to use the `interbotix_xsarm_puppet` library.
 
+This is the expected behavior:
+![record_playback](./record_playback)
+
 Recording procedure:
 ```
 roslaunch interbotix_xsarm_puppet xsarm_puppet_single.launch robot_model:=wx250s record:=true
