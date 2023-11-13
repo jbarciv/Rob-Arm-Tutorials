@@ -29,7 +29,7 @@ In terminal type:
 roslaunch interbotix_xsarm_joy xsarm_joy.launch robot_model:=wx250s use_sim:=true
 ```
 This is the expected behavior:\
-![joystick](./joystick.gif)
+![joystick](/gifs/joystick.gif)
 
 To connect your joystick on ubuntu I recommend: setting bluetooth to *on*, and then press and hold the *Share* button and also the *PS* button. After a few seconds, you will see a "Wirleless Controller" pop up. 
 

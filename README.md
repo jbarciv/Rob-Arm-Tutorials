@@ -44,3 +44,26 @@ For moving the robot arm with the use the **joystick ros package** (you will nee
 ```
 roslaunch interbotix_xsarm_joy xsarm_joy.launch robot_model:=wx250s
 ```
+
+![joystick](/gifs/joystick.gif)
+
+### MoveIt
+
+```
+roslaunch interbotix_xsarm_moveit_interface xsarm_moveit_interface.launch robot_model:=wx250s dof:=6 use_cpp_interface:=true use_actual:=true
+```
+
+### Record/Playback
+
+Recording procedure:
+```
+roslaunch interbotix_xsarm_puppet xsarm_puppet_single.launch robot_model:=wx250s record:=true
+```
+then type `ctrl+c` to stop the recording process.
+
+Now type:
+```
+roslaunch interbotix_xsarm_puppet xsarm_puppet_single.launch robot_model:=wx250s playback:=true bag_name:=wx250s_commands
+```
+
+![record_playback](/gifs/record_playback.gif)
