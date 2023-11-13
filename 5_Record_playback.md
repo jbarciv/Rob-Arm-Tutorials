@@ -3,7 +3,7 @@
 In the [video](https://www.youtube.com/watch?v=DnjbNXxBE_8&list=PL8X3t2QTE54sMTCF59t0pTFXgAmdf0Y9t&index=9&ab_channel=TrossenRobotics) tutorial there is documentation about moving two or more robots at the same time. But here we only focus in the *process of recording the movements of a robot and then doing the same robot to reproduce the recorded motion*. This would be good for manually moving the arm to desired position and then playing it back as many times as necessary. We are going to use the `interbotix_xsarm_puppet` library.
 
 This is the expected behavior:\
-![record_playback](./record_playback)
+![record_playback](./record_playback.gif)
 
 Recording procedure:
 ```
