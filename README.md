@@ -47,7 +47,7 @@ roslaunch interbotix_xsarm_joy xsarm_joy.launch robot_model:=wx250s
 
 ![joystick](/gifs/joystick.gif)
 
-### MoveIt
+### MoveIt in Rviz
 
 ```
 roslaunch interbotix_xsarm_moveit_interface xsarm_moveit_interface.launch robot_model:=wx250s dof:=6 use_cpp_interface:=true use_actual:=true
@@ -67,3 +67,26 @@ roslaunch interbotix_xsarm_puppet xsarm_puppet_single.launch robot_model:=wx250s
 ```
 
 ![record_playback](/gifs/record_playback.gif)
+
+### Gazebo
+**Directly with ros topics**. Start typing:
+```
+roslaunch interbotix_xsarm_gazebo xsarm_gazebo.launch robot_model:=wx250s dof:=6 use_position_controller:=true
+```
+Now type in another terminal:
+```
+rosservice call /gazebo/unpause_physics
+```
+As an example, move the wrist angle with this rostopic: 
+```
+rostopic pub -1 /wx250s/wrist_angle_controller/command std_msgs/Float6
+```
+
+**Now with MoveIt:**
+```
+roslaunch interbotix_xsarm_moveit xsarm_moveit.launch robot_model:=wx250s dof:=6 use_gazebo:=true
+```
+Rviz might hang until you unpause the physics engine in Gazebo:
+```
+rosservice call /gazebo/unpause_physics
+```
